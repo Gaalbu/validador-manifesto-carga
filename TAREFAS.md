@@ -67,7 +67,7 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [ ] Levantar **uma limitação observada nos testes** (cobrada na apresentação)
 
 ## Frente 5 — Slides, entrega e "o que mais falta" (menor parte)
-**Responsável:** Membro 5 · **Pastas:** `docs/slides/`, `docs/relatorio/`
+**Responsável:** Jorge Lobato · **Pastas:** `docs/slides/`, `docs/relatorio/`
 - [ ] **Dia 1:** resolver a questão dos 5 integrantes com o professor
 - [ ] **Dia 1:** abrir a **rubrica completa** no Classroom (o PDF diz que ela está lá) e listar aqui qualquer exigência que não esteja neste arquivo
 - [ ] Ver comentários da turma/particulares e confirmar data da turma (CC6NA 25/11 ou CC6MA 27/11)
