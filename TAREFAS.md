@@ -27,6 +27,11 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 
 ---
 
+> **Atualização:** as tabelas de transição do AP (`src/ap/transicoes.py`, 9 estados) e do ALL
+> (`src/all/transicoes.py`, 16 estados + aceita/rejeita) já estão implementadas e verificadas.
+> As Frentes 1 e 2 agora **documentam e justificam** essas tabelas (e propõem mudanças, se acharem
+> melhor; a Frente 3 ajusta o código).
+
 ## Frente 1 — GLC + Autômato de Pilha (modelagem formal)
 **Responsável:** Membro 1 · **Pasta:** `docs/modelagem/ap.md`
 - [ ] Alfabeto, regra de formação e GLC (V, Σ, P, S)
@@ -35,7 +40,7 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [ ] AP: estados (≥ 8), Σ, Γ, configuração inicial, tabela de transições, critério de aceitação (estado final ou pilha vazia, consumindo toda a entrada)
 - [ ] Justificativa: por que o AP reconhece exatamente L(GLC)
 - [ ] Diagrama do AP (indicar origem: feito pela equipe / ferramenta)
-- [ ] Entregar a tabela de transições para a Frente 3 **até o dia 22**
+- [ ] Transcrever/revisar a tabela de `src/ap/transicoes.py` em formato de relatório
 
 ## Frente 2 — Linguagem sensível ao contexto + ALL (modelagem formal)
 **Responsável:** Membro 2 · **Pasta:** `docs/modelagem/all.md`
@@ -44,16 +49,16 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [ ] ALL: estados (≥ 8), alfabeto de entrada e da fita, marcadores de borda `<` `>`, config. inicial, transições (lê/escreve/move), aceitação e rejeição
 - [ ] Mostrar que usa só **n células + 2 marcadores** (sem fita extra)
 - [ ] Diagrama do ALL
-- [ ] Entregar a tabela de transições para a Frente 3 **até o dia 22**
+- [ ] Transcrever/revisar a tabela de `src/all/transicoes.py` em formato de relatório
 
-## Frente 3 — Implementação dos simuladores
-**Responsável:** Membro 3 (sugestão: Gabriel) · **Pastas:** `src/`
-- [ ] Simulador do AP dirigido pela tabela de transições (não "if" ad hoc): rastreamento com estado, posição de leitura e pilha
-- [ ] Simulador do ALL: rastreamento com estado, fita e posição do cabeçote; cabeçote não passa das bordas
-- [ ] Fluxo integrado: AP → (se aceitar) ALL sobre o trecho após `#`
-- [ ] Erro claro para símbolo fora do alfabeto
-- [ ] Texto curto: **por que o programa termina** para toda entrada; se houver não determinismo, como explora alternativas e quando rejeita
-- [ ] CLI simples (`python -m src.main "<cadeia>" --trace`)
+## Frente 3 — Implementação dos simuladores ✅
+**Responsável:** Gabriel · **Pastas:** `src/`, `docs/implementacao.md`
+- [x] Simulador do AP dirigido pela tabela de transições (não "if" ad hoc): rastreamento com estado, posição de leitura e pilha
+- [x] Simulador do ALL: rastreamento com estado, fita e posição do cabeçote; cabeçote não passa das bordas
+- [x] Fluxo integrado: AP → (se aceitar) ALL sobre o trecho após `#`
+- [x] Erro claro para símbolo fora do alfabeto
+- [x] Texto curto: **por que o programa termina** para toda entrada; se houver não determinismo, como explora alternativas e quando rejeita
+- [x] CLI simples (`python -m src.main "<cadeia>" --trace`)
 
 ## Frente 4 — Testes + README/reprodutibilidade
 **Responsável:** Membro 4 · **Pastas:** `tests/`, `exemplos/`, `README.md`

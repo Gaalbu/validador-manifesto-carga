@@ -13,20 +13,33 @@ Divisão do trabalho: [`TAREFAS.md`](TAREFAS.md).
 |---|---|---|
 | `docs/modelagem/ap.md` | GLC, derivação, especificação do AP | 1 |
 | `docs/modelagem/all.md` | linguagem sensível ao contexto, especificação do ALL | 2 |
-| `src/` | simuladores e CLI | 3 |
+| `src/`, `docs/implementacao.md` | simuladores, tabelas de transição, CLI, terminação | 3 |
 | `tests/`, `exemplos/` | testes e cadeias de exemplo | 4 |
 | `docs/relatorio/`, `docs/slides/` | relatório e apresentação | 5 |
 
 ## Instalar
+Requer Python 3.10+.
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
 ## Executar
 ```bash
-python -m src.main "[{}[{}]]{[]}#PPEEECCDDD" --trace
+python -m src.main "[{}[{}]]{[]}#PPEEECCDDD"            # fluxo completo
+python -m src.main "[{}[{}]]{[]}#PPEEECCDDD" --trace    # com rastreamento dos dois autômatos
+python -m src.main "[{}[{]}]{[]}#PPEEECCDDD" --so ap    # só o AP
+python -m src.main "PPPPEEEEECCCCDDDDD" --so all --trace # só o ALL
 ```
+Código de saída: `0` aceita, `1` rejeita, `2` símbolo fora do alfabeto.
+
+Cenários de integração (em `exemplos/integracao.txt`):
+
+| Entrada | AP | ALL |
+|---|---|---|
+| `[{}[{}]]{[]}#PPEEECCDDD` | aceita | aceita |
+| `[{}[{]}]{[]}#PPEEECCDDD` | rejeita | não executa |
+| `[{}[{}]]{[]}#PPEEECCCDD` | aceita | rejeita |
 
 ## Testes
 ```bash
@@ -34,7 +47,10 @@ python -m pytest -v
 ```
 
 ## Uso de inteligência artificial
-<!-- Frente 4: ferramenta usada, tarefas apoiadas e o que a equipe verificou -->
+- **Ferramenta:** Claude (Anthropic).
+- **Tarefas apoiadas:** estrutura do repositório e divisão por frentes; primeira versão dos simuladores,
+  das tabelas de transição e de `tests/test_implementacao.py`.
+- **O que a equipe verificou:** <!-- Frente 4: preencher (ex.: conferência manual das tabelas, rastreamentos, testes) -->
 
 ## Equipe
 <!-- nomes completos e contribuição de cada integrante -->
