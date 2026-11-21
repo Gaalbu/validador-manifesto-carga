@@ -3,10 +3,6 @@
 > Entrega: **25/11 (CC6NA) ou 27/11 (CC6MA)**, antes do início da aula. Apresentação no mesmo dia.
 > Trocar `Membro 1..5` pelos nomes reais.
 
-## ⚠️ Antes de tudo
-O enunciado diz: **"Equipes de 1 a 4 integrantes. Equipes com mais de 4 integrantes não serão permitidas."**
-Com 5 pessoas, falar com o professor **já** (ou dividir em 4 + 1). A frente 5 cuida disso no dia 1.
-
 ## Problema proposto (a confirmar com a equipe)
 **Validador de manifesto de carga** — entrada `ESTRUTURA#LOTE`.
 
