@@ -38,14 +38,22 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [ ] Diagrama do AP (indicar origem: feito pela equipe / ferramenta)
 - [ ] Transcrever/revisar a tabela de `src/ap/transicoes.py` em formato de relatório
 
-## Frente 2 — Linguagem sensível ao contexto + ALL (modelagem formal)
-**Responsável:** Membro 2 · **Pasta:** `docs/modelagem/all.md`
-- [ ] Alfabeto e regra de aceitação
-- [ ] Prova/referência de que a linguagem **não é livre de contexto** (bombeamento para LLC) e de que é sensível ao contexto
-- [ ] ALL: estados (≥ 8), alfabeto de entrada e da fita, marcadores de borda `<` `>`, config. inicial, transições (lê/escreve/move), aceitação e rejeição
-- [ ] Mostrar que usa só **n células + 2 marcadores** (sem fita extra)
-- [ ] Diagrama do ALL
-- [ ] Transcrever/revisar a tabela de `src/all/transicoes.py` em formato de relatório
+## Frente 2 — Linguagem sensível ao contexto + ALL (modelagem formal) ✅
+**Responsável:** Davi · **Pasta:** `docs/modelagem/all.md`
+- [x] Alfabeto e regra de aceitação
+- [x] Prova de que a linguagem **não é livre de contexto** (bombeamento para LLC) e de que é sensível ao contexto (teorema de Kuroda + gramática monotônica conferida por força bruta)
+- [x] ALL: estados (18), alfabeto de entrada e da fita, marcadores de borda `<` `>`, config. inicial, transições (lê/escreve/move), aceitação e rejeição (com a causa de cada ponto de rejeição)
+- [x] Mostrar que usa só **n células + 2 marcadores** (sem fita extra)
+- [x] Diagrama do ALL (`docs/modelagem/all_diagrama.svg/.png`, gerado da própria tabela por `gerar_diagrama_all.py` + Graphviz)
+- [x] Transcrever/revisar a tabela de `src/all/transicoes.py` em formato de relatório (tabela compacta + matriz); tabela aprovada sem mudanças de lógica
+- Extra: roteiro para **prever a decisão** de uma cadeia nova (seção 5) e limite de passos 2(n+1)(n+3) verificado para todas as cadeias até 12 símbolos
+
+> **Sugestão para a Frente 3 (cosmética, opcional):** no rastreamento do ALL, o movimento aparece como
+> `D`/`E` (direita/esquerda), que são também símbolos da fita (`D` = devolução, `E` = envio). Trocar
+> `_MOV` em `src/all/automato_linear.py` por `R`/`L`/`S` (ou `→`/`←`/`·`) evita confusão na demonstração.
+> Se mudar, atualizar a nota da seção 8 de `docs/modelagem/all.md`.
+>
+> **Para a Frente 4:** a seção 5 de `all.md` já traz cadeias de 18 símbolos para cada causa de rejeição.
 
 ## Frente 3 — Implementação dos simuladores ✅
 **Responsável:** Gabriel · **Pastas:** `src/`, `docs/implementacao.md`
