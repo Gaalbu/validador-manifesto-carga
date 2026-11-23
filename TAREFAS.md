@@ -68,7 +68,7 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [x] CLI simples (`python -m src.main "<cadeia>" --trace`)
 
 ## Frente 4 — Testes + README/reprodutibilidade
-**Responsável:** Membro 4 · **Pastas:** `tests/`, `exemplos/`, `README.md`
+**Responsável:** José · **Pastas:** `tests/`, `exemplos/`, `README.md`
 - [ ] AP: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite (vazia / mínima)
 - [ ] ALL: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite
 - [ ] Integração: 3 cenários (aceita/aceita · AP rejeita · AP aceita e ALL rejeita)
