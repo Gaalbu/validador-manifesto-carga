@@ -28,15 +28,18 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 > As Frentes 1 e 2 agora **documentam e justificam** essas tabelas (e propõem mudanças, se acharem
 > melhor; a Frente 3 ajusta o código).
 
-## Frente 1 — GLC + Autômato de Pilha (modelagem formal)
-**Responsável:** Membro 1 · **Pasta:** `docs/modelagem/ap.md`
-- [ ] Alfabeto, regra de formação e GLC (V, Σ, P, S)
-- [ ] Argumento de que a linguagem **não é regular** (bombeamento)
-- [ ] Derivação completa de uma cadeia aceita (≥ 18 caracteres) — será mostrada na apresentação
-- [ ] AP: estados (≥ 8), Σ, Γ, configuração inicial, tabela de transições, critério de aceitação (estado final ou pilha vazia, consumindo toda a entrada)
-- [ ] Justificativa: por que o AP reconhece exatamente L(GLC)
-- [ ] Diagrama do AP (indicar origem: feito pela equipe / ferramenta)
-- [ ] Transcrever/revisar a tabela de `src/ap/transicoes.py` em formato de relatório
+## Frente 1 — GLC + Autômato de Pilha (modelagem formal) ✅
+**Responsável:** Alberto · **Pasta:** `docs/modelagem/ap.md`
+- [x] Alfabeto, regra de formação e GLC (V, Σ, P, S) — gramática não ambígua
+- [x] Argumento de que a linguagem **não é regular** (bombeamento com `[^p ]^p #PECD`)
+- [x] Derivação mais à esquerda completa de `[{}[{}]]{[]}#PPEEECCDDD` (23 símbolos, 24 passos, conferida por script) + árvore
+- [x] AP: 9 estados, Σ, Γ, configuração inicial, tabela de 22 transições, aceitação por estado final (`q8`) com a entrada consumida
+- [x] Justificativa: L(AP) = L(GLC) (invariante da pilha por indução) + conferência por computador (`verificar_ap.py`: GLC = AP até 16 símbolos, força bruta até 7)
+- [x] Diagrama do AP (`docs/modelagem/ap_diagrama.svg/.png`, gerado da própria tabela por `gerar_diagrama_ap.py` + Graphviz)
+- [x] Transcrever/revisar a tabela de `src/ap/transicoes.py` em formato de relatório; tabela aprovada sem mudanças de lógica
+- Extra: tabela GLC ↔ AP (seção 6), limite de passos ≤ 2|w| (seção 8) e roteiro para prever a decisão (seção 9)
+
+> **Para a Frente 4:** a seção 1 de `ap.md` traz cadeias aceitas/rejeitadas do AP com a causa de cada rejeição.
 
 ## Frente 2 — Linguagem sensível ao contexto + ALL (modelagem formal) ✅
 **Responsável:** Davi · **Pasta:** `docs/modelagem/all.md`
