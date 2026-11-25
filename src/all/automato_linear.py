@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 from src.erros import SimboloForaDoAlfabeto
 from src.all import transicoes as T
 
-_MOV = {T.L: "E", T.R: "D", T.S: "-"}
+_MOV = {T.L: "L", T.R: "R", T.S: "S"}  # R = direita, L = esquerda, S = parado (D/E são símbolos da fita)
 
 
 @dataclass

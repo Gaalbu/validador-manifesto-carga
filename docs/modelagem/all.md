@@ -363,43 +363,43 @@ entre colchetes. Trechos do rastreamento real (130 passos):
 
 ```
    0 | q0    | cab=0   | [<]PPEEECCDDD>                                  configuração inicial
-   1 | q1    | cab=1   | <[P]PEEECCDDD>   (leu <, escreveu <, D)
+   1 | q1    | cab=1   | <[P]PEEECCDDD>   (leu <, escreveu <, R)
  ... fase 1: confere o formato até o '>' (passos 1–11) e volta (12–22)
-  11 | q5    | cab=11  | <PPEEECCDDD[>]   (leu D, escreveu D, D)
-  12 | q6    | cab=10  | <PPEEECCDD[D]>   (leu >, escreveu >, E)
-  22 | q6    | cab=0   | [<]PPEEECCDDD>   (leu P, escreveu P, E)
+  11 | q5    | cab=11  | <PPEEECCDDD[>]   (leu D, escreveu D, R)
+  12 | q6    | cab=10  | <PPEEECCDD[D]>   (leu >, escreveu >, L)
+  22 | q6    | cab=0   | [<]PPEEECCDDD>   (leu P, escreveu P, L)
  ... fase 2, 1ª volta: marca P e C
-  23 | q7    | cab=1   | <[P]PEEECCDDD>   (leu <, escreveu <, D)
-  24 | q8    | cab=2   | <p[P]EEECCDDD>   (leu P, escreveu p, D)      P → p
-  28 | q8    | cab=6   | <pPEEE[C]CDDD>   (leu E, escreveu E, D)
-  29 | q9    | cab=5   | <pPEE[E]cCDDD>   (leu C, escreveu c, E)      C → c
+  23 | q7    | cab=1   | <[P]PEEECCDDD>   (leu <, escreveu <, R)
+  24 | q8    | cab=2   | <p[P]EEECCDDD>   (leu P, escreveu p, R)      P → p
+  28 | q8    | cab=6   | <pPEEE[C]CDDD>   (leu E, escreveu E, R)
+  29 | q9    | cab=5   | <pPEE[E]cCDDD>   (leu C, escreveu c, L)      C → c
  ... 2ª volta: marca o 2º P e o 2º C
-  42 | q9    | cab=6   | <ppEEE[c]cDDD>   (leu C, escreveu c, E)
+  42 | q9    | cab=6   | <ppEEE[c]cDDD>   (leu C, escreveu c, L)
  ... fase 3: q7 encontra E (acabaram os P); q10 confere que não há C livre
-  51 | q7    | cab=3   | <pp[E]EEccDDD>   (leu p, escreveu p, D)
-  52 | q10   | cab=4   | <ppE[E]EccDDD>   (leu E, escreveu E, D)
-  57 | q11   | cab=7   | <ppEEEc[c]DDD>   (leu D, escreveu D, E)
+  51 | q7    | cab=3   | <pp[E]EEccDDD>   (leu p, escreveu p, R)
+  52 | q10   | cab=4   | <ppE[E]EccDDD>   (leu E, escreveu E, R)
+  57 | q11   | cab=7   | <ppEEEc[c]DDD>   (leu D, escreveu D, L)
  ... fase 4: três voltas casando E com D
-  68 | q13   | cab=4   | <ppe[E]EccDDD>   (leu E, escreveu e, D)      E → e
-  73 | q14   | cab=7   | <ppeEEc[c]dDD>   (leu D, escreveu d, E)      D → d
- 109 | q14   | cab=9   | <ppeeeccd[d]d>   (leu D, escreveu d, E)
+  68 | q13   | cab=4   | <ppe[E]EccDDD>   (leu E, escreveu e, R)      E → e
+  73 | q14   | cab=7   | <ppeEEc[c]dDD>   (leu D, escreveu d, L)      D → d
+ 109 | q14   | cab=9   | <ppeeeccd[d]d>   (leu D, escreveu d, L)
  ... fase 5: q12 encontra c (acabaram os E); q15 confere que não há D livre
- 124 | q12   | cab=6   | <ppeee[c]cddd>   (leu e, escreveu e, D)
- 125 | q15   | cab=7   | <ppeeec[c]ddd>   (leu c, escreveu c, D)
- 129 | q15   | cab=11  | <ppeeeccddd[>]   (leu d, escreveu d, D)
- 130 | q_acc | cab=11  | <ppeeeccddd[>]   (leu >, escreveu >, -)      ACEITA
+ 124 | q12   | cab=6   | <ppeee[c]cddd>   (leu e, escreveu e, R)
+ 125 | q15   | cab=7   | <ppeeec[c]ddd>   (leu c, escreveu c, R)
+ 129 | q15   | cab=11  | <ppeeeccddd[>]   (leu d, escreveu d, R)
+ 130 | q_acc | cab=11  | <ppeeeccddd[>]   (leu >, escreveu >, S)      ACEITA
 ```
 
-> No rastreamento do simulador, a coluna de movimento usa `D` = direita, `E` = esquerda e `-` = parado.
-> Neste documento usamos R/L/S.
+> No rastreamento, a coluna de movimento usa `R` = direita, `L` = esquerda e `S` = parado
+> (as letras D/E não são usadas para movimento, pois são símbolos da fita).
 
 Cenário 3 de integração (`[{}[{}]]{[]}#PPEEECCCDD`, ALL recebe `PPEEECCCDD`): depois de casar os
 dois `P` com dois `C`, `q10` encontra o terceiro `C` ainda maiúsculo:
 
 ```
   ...
-  55 | q10   | cab=7   | <ppEEEc[c]CDD>   (leu c, escreveu c, D)
-  56 | q10   | cab=8   | <ppEEEcc[C]DD>   (leu c, escreveu c, D)
+  55 | q10   | cab=7   | <ppEEEc[c]CDD>   (leu c, escreveu c, R)
+  56 | q10   | cab=8   | <ppEEEcc[C]DD>   (leu c, escreveu c, R)
        sem transição para (q10, 'C') -> q_rej                      REJEITA (mais C que P)
 ```
 

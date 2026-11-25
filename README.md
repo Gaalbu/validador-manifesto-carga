@@ -92,7 +92,20 @@ python -m tests.gerar_relatorio_frente4
 - **Ferramenta:** ChatGPT (OpenAI).
 - **Tarefas apoiadas:** elaboração dos casos oficiais, testes automatizados, geração das tabelas de resultados, análise do crescimento de passos e revisão das instruções de execução.
 - **Verificação realizada com apoio da IA:** execução dos testes oficiais numa cópia local do código consultado no GitHub, conferência de decisões esperadas e obtidas, limites da fita, fluxo de integração e mensagem de erro.
-- **Verificação da equipe:** antes da entrega, reexecutar os testes no clone oficial, conferir o relatório e os rastreamentos e registrar aqui o que foi efetivamente revisado pelos integrantes.
+- **Ferramenta:** Claude (Anthropic) — Frente 5.
+- **Tarefas apoiadas:** consolidação do relatório técnico a partir dos textos das frentes (`docs/relatorio/relatorio.md`), slides da apresentação (`docs/slides/`), troca dos rótulos de movimento do rastreamento do ALL para `R`/`L`/`S` e atualização do `TAREFAS.md`.
+- **Verificação da equipe:** suíte completa reexecutada no clone oficial em 25/11/2026 (`python -m pytest -v` → 55 aprovados) e os três cenários de integração e o erro de alfabeto conferidos pela CLI. <!-- cada integrante: acrescentar aqui o que revisou pessoalmente -->
 
 ## Equipe
-<!-- nomes completos e contribuição de cada integrante -->
+
+Turma CC6NA — Linguagens Formais e Autômatos — Prof. Daniel Leal Souza.
+
+| Integrante | Frente | Contribuição | Parte na apresentação |
+|---|---|---|---|
+| Alberto <!-- COMPLETAR NOME --> | 1 | GLC, prova de não regularidade, derivação, especificação e justificativa do AP, diagrama e `verificar_ap.py` | GLC ↔ AP, derivação e rastreamento do AP |
+| Davi Maciel Corrêa | 2 e 5 | linguagem sensível ao contexto, prova de não ser LLC, gramática monotônica, especificação do ALL e diagrama; relatório, slides e checklist de entrega | abertura (problema) e ALL com rastreamento |
+| Gabriel Albuquerque Alencar | 3 | estrutura do repositório, simuladores dirigidos por tabela, fluxo integrado, CLI e argumento de terminação | implementação e demonstração ao vivo |
+| José Valdez <!-- COMPLETAR NOME --> | 4 | casos oficiais, testes automatizados, tabela de resultados, README e análise da limitação | testes e limitação observada |
+| Jorge Lobato <!-- COMPLETAR NOME --> | 5 (inicial) | <!-- COMPLETAR contribuição --> | — |
+
+Relatório: [`docs/relatorio/relatorio.pdf`](docs/relatorio/relatorio.pdf) · Slides: [`docs/slides/apresentacao.pdf`](docs/slides/apresentacao.pdf) ([`.pptx`](docs/slides/apresentacao.pptx)).

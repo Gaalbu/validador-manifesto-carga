@@ -6,7 +6,7 @@ Os resultados esperados foram definidos pelas linguagens formais, independenteme
 
 Execução: `python -m pytest tests/test_frente4.py -v`. Para regenerar este relatório e os dados: `python -m tests.gerar_relatorio_frente4`.
 
-As decisões abaixo são obtidas pela execução dos reconhecedores; a tabela não é preenchida com previsões. A execução inicial foi feita em uma cópia local reconstruída do código Python da branch `main` consultado no GitHub, sem alterar a lógica. Reexecute no clone oficial antes da entrega.
+As decisões abaixo são obtidas pela execução dos reconhecedores; a tabela não é preenchida com previsões. As tabelas foram geradas executando os reconhecedores no clone oficial do repositório (branch `main`); a suíte completa (`python -m pytest -v`) foi reexecutada no clone oficial em 25/11/2026, com 55 testes aprovados.
 
 ## AP — testes isolados
 

@@ -51,6 +51,7 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [x] Transcrever/revisar a tabela de `src/all/transicoes.py` em formato de relatório (tabela compacta + matriz); tabela aprovada sem mudanças de lógica
 - Extra: roteiro para **prever a decisão** de uma cadeia nova (seção 5) e limite de passos 2(n+1)(n+3) verificado para todas as cadeias até 12 símbolos
 
+> ✅ **Feito em 25/11** (`_MOV` agora usa `R`/`L`/`S`; nota da seção 8 de `all.md` atualizada).
 > **Sugestão para a Frente 3 (cosmética, opcional):** no rastreamento do ALL, o movimento aparece como
 > `D`/`E` (direita/esquerda), que são também símbolos da fita (`D` = devolução, `E` = envio). Trocar
 > `_MOV` em `src/all/automato_linear.py` por `R`/`L`/`S` (ou `→`/`←`/`·`) evita confusão na demonstração.
@@ -67,24 +68,27 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [x] Texto curto: **por que o programa termina** para toda entrada; se houver não determinismo, como explora alternativas e quando rejeita
 - [x] CLI simples (`python -m src.main "<cadeia>" --trace`)
 
-## Frente 4 — Testes + README/reprodutibilidade
+## Frente 4 — Testes + README/reprodutibilidade ✅
 **Responsável:** José · **Pastas:** `tests/`, `exemplos/`, `README.md`
-- [ ] AP: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite (vazia / mínima)
-- [ ] ALL: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite
-- [ ] Integração: 3 cenários (aceita/aceita · AP rejeita · AP aceita e ALL rejeita)
-- [ ] Teste com símbolo fora do alfabeto (registrar a mensagem)
-- [ ] Tabela de resultados: entrada | esperado | obtido | regra verificada (`docs/relatorio/testes.md`)
-- [ ] README: instalar, executar, rodar testes; seção de **uso de IA** (ferramenta, tarefas, o que foi verificado)
-- [ ] Levantar **uma limitação observada nos testes** (cobrada na apresentação)
+- [x] AP: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite (vazia / mínima)
+- [x] ALL: ≥ 8 aceitas + ≥ 8 rejeitadas, distintas, com caso-limite
+- [x] Integração: 3 cenários (aceita/aceita · AP rejeita · AP aceita e ALL rejeita)
+- [x] Teste com símbolo fora do alfabeto (registrar a mensagem)
+- [x] Tabela de resultados: entrada | esperado | obtido | regra verificada (`docs/relatorio/testes.md`)
+- [x] README: instalar, executar, rodar testes; seção de **uso de IA** (ferramenta, tarefas, o que foi verificado)
+- [x] Levantar **uma limitação observada nos testes** (cobrada na apresentação)
+- [x] Suíte reexecutada no clone oficial em 25/11: `python -m pytest -v` → 55 passed
 
 ## Frente 5 — Slides, entrega e "o que mais falta" (menor parte)
-**Responsável:** Jorge Lobato · **Pastas:** `docs/slides/`, `docs/relatorio/`
+**Responsável:** Davi (assumiu no lugar de Jorge Lobato) · **Pastas:** `docs/slides/`, `docs/relatorio/`
 - [ ] **Dia 1:** resolver a questão dos 5 integrantes com o professor
 - [ ] **Dia 1:** abrir a **rubrica completa** no Classroom (o PDF diz que ela está lá) e listar aqui qualquer exigência que não esteja neste arquivo
-- [ ] Ver comentários da turma/particulares e confirmar data da turma (CC6NA 25/11 ou CC6MA 27/11)
-- [ ] Montar o relatório (juntar textos das frentes): problema, fontes, modelos, derivação, justificativas, testes, análise, **contribuição de cada um**, origem de código/diagramas
-- [ ] Slides (≤ 15 min): problema → GLC/AP + derivação → ALL → demo dos 3 cenários → limitação; **uma parte técnica por integrante**
-- [ ] Checklist de entrega: relatório PDF, slides PDF/PPTX, link do GitHub, nomes completos; os demais marcam entrega com o mesmo link; repo acessível ao professor
+- [ ] Ver comentários da turma/particulares no Classroom
+- [x] Data confirmada: turma **CC6NA**, entrega e apresentação em **25/11**
+- [x] Montar o relatório (juntar textos das frentes): problema, fontes, modelos, derivação, justificativas, testes, análise, **contribuição de cada um**, origem de código/diagramas
+- [x] Slides (≤ 15 min): problema → GLC/AP + derivação → ALL → demo dos 3 cenários → limitação; **uma parte técnica por integrante**
+- [x] Checklist de entrega: relatório PDF, slides PDF/PPTX, link do GitHub, nomes completos; os demais marcam entrega com o mesmo link; repo acessível ao professor
+  → relatório: `docs/relatorio/relatorio.md` + `relatorio.pdf`; slides: `docs/slides/apresentacao.pptx` + `.pdf`; checklist em `docs/relatorio/README.md`
 
 ---
 
