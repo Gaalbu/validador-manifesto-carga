@@ -95,7 +95,7 @@ python -m tests.gerar_relatorio_frente4
 - **Tarefas apoiadas:** elaboração dos casos oficiais, testes automatizados, geração das tabelas de resultados, análise do crescimento de passos e revisão das instruções de execução.
 - **Verificação realizada com apoio da IA:** execução dos testes oficiais numa cópia local do código consultado no GitHub, conferência de decisões esperadas e obtidas, limites da fita, fluxo de integração e mensagem de erro.
 - **Ferramenta:** Claude (Anthropic) — Frente 5.
-- **Tarefas apoiadas:** consolidação do relatório técnico a partir dos textos das frentes (`docs/relatorio/relatorio.md`), slides da apresentação (`docs/slides/`), troca dos rótulos de movimento do rastreamento do ALL para `R`/`L`/`S` e atualização do `TAREFAS.md`.
+- **Tarefas apoiadas:** consolidação do relatório técnico a partir dos textos das frentes (`docs/relatorio/relatorio.pdf`), slides da apresentação (`docs/slides/`), troca dos rótulos de movimento do rastreamento do ALL para `R`/`L`/`S` e atualização do `TAREFAS.md`.
 - **Verificação da equipe:** suíte completa reexecutada no clone oficial em 25/11/2026 (`python -m pytest -v` → 55 aprovados) e os três cenários de integração e o erro de alfabeto conferidos pela CLI. <!-- cada integrante: acrescentar aqui o que revisou pessoalmente -->
 
 ## Equipe

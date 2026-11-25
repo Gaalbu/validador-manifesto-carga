@@ -88,7 +88,7 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [x] Montar o relatório (juntar textos das frentes): problema, fontes, modelos, derivação, justificativas, testes, análise, **contribuição de cada um**, origem de código/diagramas
 - [x] Slides (≤ 15 min): problema → GLC/AP + derivação → ALL → demo dos 3 cenários → limitação; **uma parte técnica por integrante**
 - [x] Checklist de entrega: relatório PDF, slides PDF/PPTX, link do GitHub, nomes completos; os demais marcam entrega com o mesmo link; repo acessível ao professor
-  → relatório: `docs/relatorio/relatorio.md` + `relatorio.pdf`; slides: `docs/slides/apresentacao.pptx` + `.pdf`; checklist em `docs/relatorio/README.md`
+  → relatório: `docs/relatorio/relatorio.pdf`; slides: `docs/slides/apresentacao.pptx` + `.pdf`; checklist em `docs/relatorio/README.md`
 
 ---
 
