@@ -22,4 +22,5 @@ Os diagramas verticais em `figuras/` são os mesmos `.dot` de `docs/modelagem/` 
       o link https://github.com/Gaalbu/validador-manifesto-carga e os **nomes completos** da equipe.
 - [ ] Os demais registram a entrega com o mesmo link e informam quem enviou os arquivos.
 - [ ] Repositório público (acesso do professor durante a correção).
-- [ ] Nomes completos de Alberto, José e Jorge conferidos no README, no relatório e nos slides.
+- [x] Nomes completos conferidos no README, no relatório e nos slides: Alberto Eduardo Acosta, Davi Maciel Corrêa,
+      Gabriel Albuquerque Alencar, José Joaquim Valdez e Jorge Lobato Gonçalves.

@@ -80,9 +80,9 @@ Requisito: **AP e ALL com no mínimo 8 estados cada.**
 - [x] Suíte reexecutada no clone oficial em 25/11: `python -m pytest -v` → 55 passed
 
 ## Frente 5 — Slides, entrega e "o que mais falta" (menor parte)
-**Responsável:** Davi (assumiu no lugar de Jorge Lobato) · **Pastas:** `docs/slides/`, `docs/relatorio/`
-- [ ] **Dia 1:** resolver a questão dos 5 integrantes com o professor
-- [ ] **Dia 1:** abrir a **rubrica completa** no Classroom (o PDF diz que ela está lá) e listar aqui qualquer exigência que não esteja neste arquivo
+**Responsável:** Jorge Lobato · **Pastas:** `docs/slides/`, `docs/relatorio/`
+- [x] **Dia 1:** equipe com 5 integrantes
+- [x] **Dia 1:** rubrica conferida: é a seção AVALIAÇÃO da lauda (domínio individual 1,20 · apresentação 0,90 · pesquisa e modelagem 0,40 · implementação e testes 0,30 · documentação 0,20); nenhuma exigência fora deste arquivo
 - [ ] Ver comentários da turma/particulares no Classroom
 - [x] Data confirmada: turma **CC6NA**, entrega e apresentação em **25/11**
 - [x] Montar o relatório (juntar textos das frentes): problema, fontes, modelos, derivação, justificativas, testes, análise, **contribuição de cada um**, origem de código/diagramas

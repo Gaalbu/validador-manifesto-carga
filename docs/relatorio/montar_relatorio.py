@@ -21,25 +21,25 @@ GH_BLOB = GH + "/blob/main/"
 # Nomes completos da equipe (usados na capa e na seção de contribuição).
 EQUIPE = [
     # (nome, frente, contribuição, parte na apresentação)
-    ("Alberto", "1",
+    ("Alberto Eduardo Acosta", "1",
      "GLC, prova de que a linguagem do AP não é regular, derivação, especificação e justificativa "
      "do AP (L(M) = L(G)), diagrama e script de conferência `verificar_ap.py`",
      "GLC ↔ AP, derivação e rastreamento do AP"),
-    ("Davi Maciel Corrêa", "2 e 5",
+    ("Davi Maciel Corrêa", "2",
      "linguagem sensível ao contexto, prova de que não é livre de contexto, gramática monotônica, "
-     "especificação do ALL, limite da fita e diagrama; montagem do relatório, slides e checklist "
-     "de entrega (assumiu a Frente 5)",
+     "especificação do ALL, limite da fita e diagrama",
      "abertura (problema) e ALL com rastreamento"),
     ("Gabriel Albuquerque Alencar", "3",
      "estrutura do repositório, simuladores do AP e do ALL dirigidos por tabela, fluxo integrado, "
      "CLI, tratamento de símbolo fora do alfabeto e argumento de terminação",
      "implementação e demonstração ao vivo"),
-    ("José Valdez", "4",
+    ("José Joaquim Valdez", "4",
      "casos oficiais de teste, testes automatizados, tabela de resultados, README "
      "(instalação, execução e testes) e análise da limitação observada",
      "testes e limitação observada"),
-    ("Jorge Lobato", "5 (inicial)",
-     "responsável inicial pela Frente 5; não pôde concluí-la, e a frente foi assumida por Davi",
+    ("Jorge Lobato Gonçalves", "5",
+     "relatório técnico consolidado a partir das frentes, slides da apresentação, organização "
+     "da demonstração e checklist de entrega",
      "—"),
 ]
 

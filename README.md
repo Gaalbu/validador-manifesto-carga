@@ -47,6 +47,8 @@ python -m src.main "PPPPEEEEECCCCDDDDD" --so all --trace
 
 Código de saída: `0` aceita, `1` rejeita, `2` símbolo fora do alfabeto.
 
+No Windows, `exemplos\demo_windows.bat` (dois cliques) roda os três cenários de integração, o erro de alfabeto e um rastreamento de cada autômato.
+
 Cenários de integração (em `exemplos/integracao.txt`):
 
 | Entrada | AP | ALL |
@@ -102,10 +104,10 @@ Turma CC6NA — Linguagens Formais e Autômatos — Prof. Daniel Leal Souza.
 
 | Integrante | Frente | Contribuição | Parte na apresentação |
 |---|---|---|---|
-| Alberto <!-- COMPLETAR NOME --> | 1 | GLC, prova de não regularidade, derivação, especificação e justificativa do AP, diagrama e `verificar_ap.py` | GLC ↔ AP, derivação e rastreamento do AP |
-| Davi Maciel Corrêa | 2 e 5 | linguagem sensível ao contexto, prova de não ser LLC, gramática monotônica, especificação do ALL e diagrama; relatório, slides e checklist de entrega | abertura (problema) e ALL com rastreamento |
+| Alberto Eduardo Acosta | 1 | GLC, prova de não regularidade, derivação, especificação e justificativa do AP, diagrama e `verificar_ap.py` | GLC ↔ AP, derivação e rastreamento do AP |
+| Davi Maciel Corrêa | 2 | linguagem sensível ao contexto, prova de não ser LLC, gramática monotônica, especificação do ALL, limite da fita e diagrama | abertura (problema) e ALL com rastreamento |
 | Gabriel Albuquerque Alencar | 3 | estrutura do repositório, simuladores dirigidos por tabela, fluxo integrado, CLI e argumento de terminação | implementação e demonstração ao vivo |
-| José Valdez <!-- COMPLETAR NOME --> | 4 | casos oficiais, testes automatizados, tabela de resultados, README e análise da limitação | testes e limitação observada |
-| Jorge Lobato <!-- COMPLETAR NOME --> | 5 (inicial) | <!-- COMPLETAR contribuição --> | — |
+| José Joaquim Valdez | 4 | casos oficiais, testes automatizados, tabela de resultados, README e análise da limitação | testes e limitação observada |
+| Jorge Lobato Gonçalves | 5 | relatório técnico consolidado, slides da apresentação, organização da demonstração e checklist de entrega | — |
 
 Relatório: [`docs/relatorio/relatorio.pdf`](docs/relatorio/relatorio.pdf) · Slides: [`docs/slides/apresentacao.pdf`](docs/slides/apresentacao.pdf) ([`.pptx`](docs/slides/apresentacao.pptx)).

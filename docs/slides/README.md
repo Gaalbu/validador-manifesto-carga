@@ -14,7 +14,9 @@
 
 ## Demonstração ao vivo (slide 14)
 
-Na raiz do repositório, com o ambiente ativado:
+No Windows, o atalho é dar dois cliques em [`exemplos/demo_windows.bat`](../../exemplos/demo_windows.bat): ele roda os quatro casos abaixo, mostra o código de saída de cada um e os rastreamentos do AP (cenário 2) e do ALL (`PECD`). Testado no Python 3.11.9 do Windows em 25/11.
+
+Ou, na raiz do repositório, com o ambiente ativado:
 
 ```bash
 python -m src.main "[{}[{}]]{[]}#PPEEECCDDD" --trace   # AP aceita, ALL aceita

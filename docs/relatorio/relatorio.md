@@ -2,11 +2,11 @@
 title: "Validador de manifesto de carga: autômato de pilha + autômato linearmente limitado"
 subtitle: "Relatório técnico — Atividade Prática AV2 de Linguagens Formais e Autômatos"
 author:
-  - Alberto
+  - Alberto Eduardo Acosta
   - Davi Maciel Corrêa
   - Gabriel Albuquerque Alencar
-  - José Valdez
-  - Jorge Lobato
+  - José Joaquim Valdez
+  - Jorge Lobato Gonçalves
 date: "CESUPA — Ciência da Computação — Turma CC6NA — Prof. Daniel Leal Souza — 25/11/2026"
 toc: true
 toc-depth: 2
@@ -991,11 +991,11 @@ vez) e usar a própria fita como memória (cada par casado exige uma ida e volta
 
 | Integrante | Frente | Contribuição | Parte na apresentação |
 |---|---|---|---|
-| Alberto | 1 | GLC, prova de que a linguagem do AP não é regular, derivação, especificação e justificativa do AP (L(M) = L(G)), diagrama e script de conferência `verificar_ap.py` | GLC ↔ AP, derivação e rastreamento do AP |
-| Davi Maciel Corrêa | 2 e 5 | linguagem sensível ao contexto, prova de que não é livre de contexto, gramática monotônica, especificação do ALL, limite da fita e diagrama; montagem do relatório, slides e checklist de entrega (assumiu a Frente 5) | abertura (problema) e ALL com rastreamento |
+| Alberto Eduardo Acosta | 1 | GLC, prova de que a linguagem do AP não é regular, derivação, especificação e justificativa do AP (L(M) = L(G)), diagrama e script de conferência `verificar_ap.py` | GLC ↔ AP, derivação e rastreamento do AP |
+| Davi Maciel Corrêa | 2 | linguagem sensível ao contexto, prova de que não é livre de contexto, gramática monotônica, especificação do ALL, limite da fita e diagrama | abertura (problema) e ALL com rastreamento |
 | Gabriel Albuquerque Alencar | 3 | estrutura do repositório, simuladores do AP e do ALL dirigidos por tabela, fluxo integrado, CLI, tratamento de símbolo fora do alfabeto e argumento de terminação | implementação e demonstração ao vivo |
-| José Valdez | 4 | casos oficiais de teste, testes automatizados, tabela de resultados, README (instalação, execução e testes) e análise da limitação observada | testes e limitação observada |
-| Jorge Lobato | 5 (inicial) | responsável inicial pela Frente 5; não pôde concluí-la, e a frente foi assumida por Davi | — |
+| José Joaquim Valdez | 4 | casos oficiais de teste, testes automatizados, tabela de resultados, README (instalação, execução e testes) e análise da limitação observada | testes e limitação observada |
+| Jorge Lobato Gonçalves | 5 | relatório técnico consolidado a partir das frentes, slides da apresentação, organização da demonstração e checklist de entrega | — |
 
 Cada integrante apresenta uma parte técnica, e todos se prepararam para a arguição individual:
 relação GLC ↔ AP, justificativa da regra do ALL e do limite da fita (n + 2 células) e previsão da
